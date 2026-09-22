@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Moritz Hofmann, e-commerce manager from Münster. I build and run online shops for retailers, manufacturers and creators, paid by a share of online revenue." />
+  <meta name="description" content="Moritz Hofmann, E-Commerce Manager aus Münster. Ich baue und betreibe Onlineshops für Händler, Hersteller und Creator, bezahlt über einen Anteil am Onlineumsatz." />
   <title>Moritz Hofmann</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,10 +12,8 @@
   <script>
     (function () {
       var h = window.location.hostname;
-      if (h === 'hofmannmoritz.de' || h === 'www.hofmannmoritz.de') {
-        window.location.replace('/de/');
-      } else if (h === 'hofmannmoritz.id' || h === 'www.hofmannmoritz.id') {
-        window.location.replace('/id/');
+      if (h !== 'hofmannmoritz.com' && h !== 'localhost' && h.indexOf('github.io') === -1) {
+        window.location.replace('https://hofmannmoritz.com' + window.location.pathname);
       }
     })();
   </script>
@@ -27,47 +25,43 @@
       <img src="assets/moritz.jpg" alt="Moritz Hofmann" class="profile-photo" />
       <div class="header-text">
         <h1>Moritz Hofmann</h1>
-        <p class="tagline">E-Commerce Manager &mdash; Münster, Germany</p>
-        <p class="lang-switch">
-          <a href="https://hofmannmoritz.de">German</a>
-          <a href="https://hofmannmoritz.id">Indonesian</a>
-        </p>
+        <p class="tagline">E-Commerce Manager &mdash; Münster</p>
       </div>
     </header>
 
     <section class="about">
-      <h2>About</h2>
-      <p>I have run online shops since 2008: first my own, today one for an employer. I know the whole chain from product data and Google Shopping to payment, shipping labels and bookkeeping, and I do most of it with software I write myself.</p>
+      <h2>Über mich</h2>
+      <p>Ich betreibe seit 2008 Onlineshops, erst meinen eigenen, heute einen für meinen Arbeitgeber. Ich kenne die ganze Kette von Produktdaten und Google Shopping bis Zahlung, Versandlabel und Buchhaltung, und das meiste davon erledige ich mit Software, die ich selbst schreibe.</p>
     </section>
 
     <section class="offer">
-      <h2>What I offer</h2>
-      <p>I build and run your online shop at my own cost. You keep the goods, the packing and the customer relationship. I take care of the shop, Google Shopping, advertising, payments and technology, and I get a share of online revenue that we agree up front. No revenue, no fee.</p>
-      <p>This suits a retailer or manufacturer with a loyal customer base and no shop, or a creator who sells by direct message today.</p>
-      <p>We start with a small test on your existing customers. Only when that shows people buy online do we build the full shop.</p>
+      <h2>Was ich anbiete</h2>
+      <p>Ich baue und betreibe Ihren Onlineshop auf meine Kosten. Sie behalten Ware, Versand und den Kontakt zu Ihren Kunden. Ich kümmere mich um Shop, Google Shopping, Werbung, Zahlungsabwicklung und Technik und bekomme dafür einen Anteil am Onlineumsatz, den wir vorher festlegen. Ohne Umsatz zahlen Sie nichts.</p>
+      <p>Das passt für Händler oder Hersteller mit Stammkunden und ohne Shop, und für Creator, die heute per Direktnachricht verkaufen.</p>
+      <p>Wir starten mit einem kleinen Test über Ihre bestehenden Kunden. Erst wenn der zeigt, dass online gekauft wird, bauen wir den vollen Shop.</p>
     </section>
 
     <section class="projects">
-      <h2>Track record</h2>
+      <h2>Bisher</h2>
       <ul>
         <li>
           <span class="project-name">gold4sms.de</span>
-          <span class="project-desc">My own shop for game cards and gift codes, 2008 to 2018. Over 80,000 customers, 1.5 million euros in revenue in the best year, sold in 2018.</span>
+          <span class="project-desc">Mein eigener Shop für Gamecards und Gutscheincodes, 2008 bis 2018. Über 80.000 Kunden, 1,5 Mio. Euro Umsatz im besten Jahr, 2018 verkauft.</span>
         </li>
         <li>
           <a class="project-link" href="https://www.farmula.de" target="_blank" rel="noopener">farmula.de</a>
-          <span class="project-desc">Since 2026 I run this WooCommerce shop as an employee of Farmula GmbH: catalogue, Google Ads, B2B pricing, stock sync and order handling.</span>
+          <span class="project-desc">Seit 2026 betreue ich diesen WooCommerce-Shop als Angestellter der Farmula GmbH: Sortiment, Google Ads, B2B-Preise, Bestandsabgleich und Bestellabwicklung.</span>
         </li>
         <li>
           <a class="project-link" href="https://www.fastpal.com" target="_blank" rel="noopener">fastpal.com</a>
-          <span class="project-desc">Support for teams working with Claude Code, in a shared session.</span>
+          <span class="project-desc">Support für Teams, die mit Claude Code arbeiten, in einer gemeinsamen Session.</span>
         </li>
       </ul>
-      <p class="project-note">Earlier experiments: <a href="https://www.wallet2play.de" target="_blank" rel="noopener">wallet2play.de</a>, <a href="https://www.startupdiary.ai" target="_blank" rel="noopener">startupdiary.ai</a>.</p>
+      <p class="project-note">Frühere Experimente: <a href="https://www.wallet2play.de" target="_blank" rel="noopener">wallet2play.de</a>, <a href="https://www.startupdiary.ai" target="_blank" rel="noopener">startupdiary.ai</a>.</p>
     </section>
 
     <section class="contact">
-      <h2>Contact</h2>
+      <h2>Kontakt</h2>
       <ul>
         <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;">&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;</a></li>
         <li><a href="https://www.linkedin.com/in/moritzhofmann/" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -77,10 +71,10 @@
   </main>
 
   <section class="imprint">
-    <h2>Imprint</h2>
-    <p>Information pursuant to § 5 DDG:</p>
-    <p>Hofmann GmbH<br />Regerstr. 1<br />48301 Nottuln, Germany</p>
-    <p>Managing director: Moritz Hofmann<br />Registered at Amtsgericht Coesfeld, HRB 18001</p>
+    <h2>Impressum</h2>
+    <p>Angaben gemäß § 5 DDG:</p>
+    <p>Hofmann GmbH<br />Regerstr. 1<br />48301 Nottuln</p>
+    <p>Geschäftsführer: Moritz Hofmann<br />Registergericht: Amtsgericht Coesfeld, HRB 18001</p>
     <p>E-Mail: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;">&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;</a></p>
     <p class="copyright">&copy; 2026 Hofmann GmbH</p>
   </section>
