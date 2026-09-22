@@ -105,6 +105,7 @@ section {
 section:nth-child(2) { animation-delay: 0.08s; }
 section:nth-child(3) { animation-delay: 0.16s; }
 section:nth-child(4) { animation-delay: 0.24s; }
+section:nth-child(5) { animation-delay: 0.32s; }
 
 h2 {
   font-family: 'DM Sans', system-ui, sans-serif;
@@ -132,6 +133,32 @@ h2 {
 
 .about a {
   color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ─── Offer ───────────────────────────────────────────────────── */
+
+.offer p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+  max-width: 460px;
+  margin-bottom: 12px;
+}
+
+.offer p:last-child {
+  margin-bottom: 0;
+}
+
+.project-note {
+  margin-top: 14px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.project-note a {
+  color: var(--muted);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
