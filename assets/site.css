@@ -1,0 +1,285 @@
+/* hofmannmoritz.com: the portfolio part, the footer and the legal pages. The wedding
+   section brings its own styles (hochzeit.css, unchanged from fastpal.com/hochzeit).
+   Colors and fonts of the former E-Commerce page on fastpal.com. */
+:root {
+  --pf-ground: #ffffff;
+  --pf-ink: #121316;
+  --pf-body: #3a3d45;
+  --pf-muted: #5b5f69;
+  --pf-line: #dadce2;
+  --pf-accent: #1f3bd6;
+  --pf-accent-hover: #152a9e;
+  --pf-grey: #f3f4f6;
+  --pf-on-ink: #ffffff;
+  --pf-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --pf-text: "Public Sans", system-ui, sans-serif;
+  /* hochzeit.css reads these two; on fastpal.com next/font set them. */
+  --hz-font-display: "Cormorant Garamond";
+  --hz-font-body: "Jost";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--pf-ground);
+  color: var(--pf-ink);
+  font-family: var(--pf-text);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.pf-root h1,
+.pf-root h2,
+.pf-root h3 {
+  font-family: var(--pf-display);
+  font-weight: 700;
+  margin: 0;
+}
+.pf-root p {
+  margin: 0;
+}
+.pf-root a {
+  color: var(--pf-accent);
+}
+.pf-root a:hover {
+  color: var(--pf-accent-hover);
+}
+.pf-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Navigation: the two sections as anchors, sticky so both stay one tap away. */
+.pf-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--pf-ground);
+  --st-breite: 1080px;
+}
+#projekte,
+#hochzeit {
+  scroll-margin-top: 52px;
+}
+
+.pf-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+.pf-foto {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+.pf-hero-text {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+.pf-hero h1 {
+  font-size: clamp(36px, 5.5vw, 54px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+}
+.pf-lead {
+  margin-top: 16px !important;
+  color: var(--pf-body);
+  max-width: 640px;
+}
+.pf-kontakt {
+  margin-top: 20px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  font-weight: 600;
+}
+
+/* Projects carousel */
+.pf-projekte {
+  padding-top: 24px;
+  padding-bottom: 72px;
+}
+.pf-kopf {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.pf-kopf h2 {
+  font-size: clamp(28px, 4vw, 38px);
+}
+.pf-pfeile {
+  display: flex;
+  gap: 8px;
+}
+.pf-pfeile button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--pf-ink);
+  background: var(--pf-ground);
+  color: var(--pf-ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+.pf-pfeile button:hover:not(:disabled) {
+  background: var(--pf-ink);
+  color: var(--pf-on-ink);
+}
+.pf-pfeile button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.pf-spur {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+.pf-spur::-webkit-scrollbar {
+  display: none;
+}
+.pf-projekt {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+.pf-bild {
+  margin: 0;
+}
+.pf-bild img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--pf-line);
+  border-radius: 12px;
+}
+.pf-bild figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--pf-muted);
+}
+.pf-projekt h3 {
+  font-size: 30px;
+}
+.pf-art {
+  margin-top: 6px !important;
+  color: var(--pf-muted);
+  font-size: 16px;
+}
+.pf-projekt ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: var(--pf-body);
+}
+.pf-projekt li + li {
+  margin-top: 6px;
+}
+.pf-links {
+  margin-top: 20px !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-weight: 600;
+}
+.pf-punkte {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+.pf-punkte button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--pf-line);
+  cursor: pointer;
+}
+.pf-punkte button[aria-current="true"] {
+  background: var(--pf-ink);
+}
+
+/* Footer and legal pages */
+.pf-footer {
+  background: var(--pf-ink);
+  color: var(--pf-on-ink);
+  font-size: 15px;
+}
+.pf-footer .pf-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.pf-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.pf-footer a {
+  color: var(--pf-on-ink);
+}
+.pf-recht {
+  padding-top: 48px;
+  padding-bottom: 72px;
+  max-width: 760px;
+}
+.pf-recht h1 {
+  font-size: 40px;
+  margin-bottom: 24px;
+}
+.pf-recht h2 {
+  font-size: 22px;
+  margin: 32px 0 8px;
+}
+.pf-recht p + p {
+  margin-top: 10px;
+}
+.pf-zurueck-link {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 760px) {
+  .pf-projekt {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  .pf-hero {
+    padding-top: 36px;
+    gap: 20px;
+  }
+  .pf-foto {
+    width: 96px;
+    height: 96px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* On fastpal.com the wedding page had its own header above the hero; here the
+   portfolio ends right before it. */
+#hochzeit .hz-hero {
+  padding-top: 64px;
+}

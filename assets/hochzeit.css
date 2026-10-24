@@ -1,0 +1,420 @@
+/*
+ * Startseite fuer Hochzeitsseiten (app/hochzeit/page.tsx). Mit
+ * app/claude/landing.css eine der zwei CSS-Dateien der Web-App: Startseiten
+ * brauchen Umbrueche fuer das Handy. Farben kommen als --hz-* aus
+ * hochzeit-theme.ts, hier steht kein Hex.
+ */
+.hz-root {
+  --st-breite: 1080px;
+  min-height: 100dvh;
+  background: var(--hz-ground);
+  color: var(--hz-ink);
+  font-family: var(--hz-font-body), system-ui, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.hz-root h1,
+.hz-root h2,
+.hz-root h3 {
+  font-family: var(--hz-font-display), Georgia, serif;
+  font-weight: 500;
+  margin: 0;
+}
+.hz-root p {
+  margin: 0;
+}
+.hz-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.hz-header {
+  border-bottom: 1px solid var(--hz-line);
+}
+.hz-header .hz-wrap {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.hz-marke {
+  font-family: var(--hz-font-display), Georgia, serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.hz-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--hz-ink);
+  color: var(--hz-on-ink);
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 16px 28px;
+}
+.hz-btn:hover {
+  background: var(--hz-body);
+}
+.hz-btn-linie {
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+  color: var(--hz-ink);
+  border: 1px solid var(--hz-gold);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 10px 18px;
+}
+.hz-btn-linie:hover {
+  background: var(--hz-paper);
+}
+.hz-link {
+  color: var(--hz-ink);
+  text-underline-offset: 5px;
+  text-decoration-color: var(--hz-gold);
+}
+.hz-oben {
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--hz-muted);
+}
+
+.hz-hero {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 56px;
+  align-items: center;
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+.hz-hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.hz-hero h1 {
+  font-size: clamp(44px, 6vw, 72px);
+  line-height: 1.02;
+}
+.hz-lead {
+  font-size: 20px;
+  color: var(--hz-body);
+  max-width: 560px;
+}
+.hz-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin-top: 6px;
+}
+.hz-preis-kurz {
+  font-size: 15px;
+  color: var(--hz-muted);
+}
+.hz-hero-bild img,
+.hz-handys img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  border: 6px solid var(--hz-ink);
+}
+
+.hz-band {
+  background: var(--hz-band);
+  padding: 80px 0;
+}
+.hz-band h2,
+.hz-abschnitt h2 {
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1.1;
+}
+.hz-unter {
+  margin-top: 10px;
+  color: var(--hz-muted);
+  font-size: 16px;
+}
+.hz-unter a {
+  color: inherit;
+}
+.hz-handys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 40px;
+}
+.hz-handys figure {
+  margin: 0;
+}
+.hz-handys figcaption {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--hz-body);
+}
+
+.hz-abschnitt {
+  padding-top: 88px;
+}
+.hz-liste {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
+}
+.hz-liste li {
+  padding: 14px 0 14px 28px;
+  border-bottom: 1px solid var(--hz-line);
+  position: relative;
+}
+.hz-liste li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 25px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--hz-gold);
+}
+
+.hz-schritte {
+  list-style: none;
+  padding: 0;
+  margin: 32px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.hz-schritte li {
+  border-top: 1px solid var(--hz-gold);
+  padding-top: 18px;
+}
+.hz-nr {
+  font-family: var(--hz-font-display), Georgia, serif;
+  font-size: 40px;
+  color: var(--hz-gold);
+  line-height: 1;
+}
+.hz-schritte h3 {
+  font-size: 28px;
+  margin: 10px 0 8px;
+}
+.hz-schritte p {
+  color: var(--hz-body);
+}
+
+.hz-preis {
+  background: var(--hz-paper);
+  border: 1px solid var(--hz-line);
+  padding: 48px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.hz-betrag {
+  font-family: var(--hz-font-display), Georgia, serif;
+  font-size: 72px;
+  line-height: 1;
+}
+.hz-preis p:not(.hz-oben):not(.hz-betrag) {
+  max-width: 520px;
+  color: var(--hz-body);
+}
+
+.hz-faq {
+  margin-top: 28px;
+  border-top: 1px solid var(--hz-line);
+}
+.hz-faq details {
+  border-bottom: 1px solid var(--hz-line);
+  padding: 18px 0;
+}
+.hz-faq summary {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 19px;
+}
+.hz-faq details p {
+  margin-top: 10px;
+  color: var(--hz-body);
+  max-width: 760px;
+}
+
+.hz-ich {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 96px;
+}
+.hz-ich p {
+  max-width: 600px;
+  color: var(--hz-body);
+}
+
+.hz-form {
+  width: 100%;
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 20px;
+  text-align: left;
+  margin-top: 8px;
+}
+.hz-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--hz-muted);
+}
+.hz-form input,
+.hz-form textarea {
+  font: inherit;
+  font-size: 17px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--hz-ink);
+  background: var(--hz-paper);
+  border: 1px solid var(--hz-line);
+  padding: 12px 14px;
+  border-radius: 0;
+}
+.hz-form input:focus,
+.hz-form textarea:focus {
+  outline: 2px solid var(--hz-gold);
+  outline-offset: 1px;
+}
+.hz-form-breit {
+  grid-column: 1 / -1;
+}
+.hz-form-ende {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.hz-form button {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+.hz-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.hz-form-hinweis,
+.hz-mail {
+  font-size: 14px;
+  color: var(--hz-muted);
+}
+.hz-form-hinweis a,
+.hz-mail a,
+.hz-form-fehler a {
+  color: inherit;
+}
+.hz-mail {
+  font-size: 16px;
+}
+.hz-form-fehler {
+  color: var(--hz-ink);
+  background: var(--hz-band);
+  padding: 10px 14px;
+}
+/* Fuer Menschen unsichtbar, fuer Bots ein normales Feld. */
+.hz-form-falle {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.hz-form-danke {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 0;
+}
+
+.hz-footer {
+  border-top: 1px solid var(--hz-line);
+  padding: 28px 0 36px;
+  font-size: 14px;
+  color: var(--hz-muted);
+}
+.hz-footer .hz-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+.hz-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}
+.hz-footer a {
+  color: inherit;
+}
+
+@media (max-width: 860px) {
+  .hz-hero {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 48px;
+    padding-bottom: 56px;
+  }
+  .hz-hero-bild {
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .hz-handys {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hz-liste,
+  .hz-schritte {
+    grid-template-columns: 1fr;
+  }
+  .hz-abschnitt {
+    padding-top: 64px;
+  }
+  .hz-preis {
+    padding: 36px 20px;
+  }
+  .hz-form {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  .hz-header .hz-wrap {
+    padding: 0 16px;
+  }
+  .hz-wrap {
+    padding: 0 16px;
+  }
+  .hz-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

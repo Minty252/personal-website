@@ -1,94 +1,248 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Moritz Hofmann, E-Commerce Manager aus Münster. Ich baue und betreibe Onlineshops für Händler, Hersteller und Creator, bezahlt über einen Anteil am Onlineumsatz." />
-  <title>Moritz Hofmann</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    (function () {
-      var h = window.location.hostname;
-      if (h !== 'hofmannmoritz.com' && h !== 'localhost' && h.indexOf('github.io') === -1) {
-        window.location.replace('https://hofmannmoritz.com' + window.location.pathname);
-      }
-    })();
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moritz Hofmann: Onlineshops und Hochzeitswebseiten</title>
+<meta name="description" content="Moritz Hofmann aus Münster. Onlineshops seit 2008: farmula.de, topro.nl, gold4sms.de. Dazu handgebaute Hochzeitswebseiten.">
+<meta property="og:title" content="Moritz Hofmann: Onlineshops und Hochzeitswebseiten">
+<meta property="og:description" content="Moritz Hofmann aus Münster. Onlineshops seit 2008: farmula.de, topro.nl, gold4sms.de. Dazu handgebaute Hochzeitswebseiten.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://hofmannmoritz.com/assets/farmula.jpg">
+<link rel="alternate" hreflang="de" href="https://hofmannmoritz.com/">
+<link rel="alternate" hreflang="en" href="https://hofmannmoritz.com/en/">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/tabs.css">
+<link rel="stylesheet" href="assets/hochzeit.css">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="assets/site.js"></script>
 </head>
 <body>
-  <main>
+<nav class="st-tabs pf-nav" aria-label="Bereiche">
+<div class="st-zeile">
+<ul><li><a href="#projekte">E-Commerce</a></li><li><a href="#hochzeit">Hochzeitswebseiten</a></li></ul>
+<div class="st-sprachwahl" role="group" aria-label="Sprache">
+<a href="./" hreflang="de" lang="de" aria-current="true">DE</a>
+<a href="en/" hreflang="en" lang="en">EN</a>
+</div>
+</div>
+</nav>
+<div class="pf-root">
+<header class="pf-wrap pf-hero">
+<img class="pf-foto" src="assets/moritz.jpg" alt="Moritz Hofmann" width="612" height="612">
+<div class="pf-hero-text">
+<h1>Moritz Hofmann</h1>
+<p class="pf-lead">Ich baue und betreue Onlineshops, seit 2008. Hier steht, woran ich gearbeitet habe und was ich dort gemacht habe. Dazu baue ich Hochzeitswebseiten für Paare.</p>
+<p class="pf-kontakt"><a data-mail data-mail-label>E-Mail schreiben</a><a href="https://www.linkedin.com/in/moritzhofmann/" target="_blank" rel="noopener">LinkedIn</a></p>
+</div>
+</header>
+<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel">
+<div data-karussell aria-roledescription="carousel" aria-label="Projekte">
+<div class="pf-kopf">
+<h2 id="projekte-titel">Projekte</h2>
+<div class="pf-pfeile">
+<button type="button" class="pf-zurueck" aria-label="Vorheriges Projekt">←</button>
+<button type="button" class="pf-weiter" aria-label="Nächstes Projekt">→</button>
+</div>
+</div>
+<div class="pf-spur" tabindex="0">
+<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 1 / 4">
+<figure class="pf-bild"><img src="assets/farmula.jpg" alt="Startseite von farmula.de mit der Herbstaktion für Kälberdecken" width="1280" height="640"></figure>
+<div>
+<h3>farmula.de</h3>
+<p class="pf-art">Tiergesundheit für Landwirte, WooCommerce. Ich baue und betreue den Shop als E-Commerce-Manager der Farmula GmbH.</p>
+<ul><li>Neues Theme nach einem Figma-Entwurf</li><li>Kasse in Schritten und ein Warenkorb, der von der Seite einfährt</li><li>Staffelpreise, Mehrfachpackungen und Aktions-Sets als eigenes Plugin</li><li>Google-Shopping-Feed, Google Ads und ein Test mit Anzeigen in ChatGPT</li><li>Tracking mit GA4, Google Tag Manager und Mixpanel</li><li>Seiten-Cache für kurze Ladezeiten und ein Korrekturlauf über alle Seiten</li></ul>
+<p class="pf-links"><a href="https://www.farmula.de" target="_blank" rel="noopener">farmula.de ansehen</a></p>
+</div>
+</article>
+<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 2 / 4">
+<figure class="pf-bild"><img src="assets/topro.jpg" alt="Startseite von topro.nl mit der Herbstaktion" width="1280" height="640" loading="lazy"></figure>
+<div>
+<h3>topro.nl</h3>
+<p class="pf-art">Der niederländische Shop der Farmula B.V., WooCommerce.</p>
+<ul><li>Neu gestaltet, live seit Oktober 2026</li><li>Umzug auf einen eigenen Server</li><li>Neue Produkte und Unterkategorien, ohne dass sich Produkt-Adressen ändern (die QR-Codes in den Broschüren funktionieren weiter)</li><li>Preise ohne Mehrwertsteuer für Geschäftskunden</li><li>GA4 mit Kauf-Tracking vom Server und Spamschutz im Kontaktformular</li></ul>
+<p class="pf-links"><a href="https://www.topro.nl" target="_blank" rel="noopener">topro.nl ansehen</a></p>
+</div>
+</article>
+<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 3 / 4">
+<figure class="pf-bild"><img src="assets/gold4sms-2016.jpg" alt="Startseite von gold4sms.de im Mai 2016" width="1280" height="800" loading="lazy"><figcaption>gold4sms.de im Mai 2016, Design von 2011</figcaption></figure>
+<div>
+<h3>gold4sms.de</h3>
+<p class="pf-art">Mein eigener Shop für Gamecards und Gutscheincodes, 2008 bis 2018.</p>
+<ul><li>Aufgebaut und zehn Jahre selbst betrieben</li><li>Über 80.000 Kunden</li><li>1,2 Mio. Euro Jahresumsatz</li><li>2018 verkauft</li></ul>
 
-    <header>
-      <img src="assets/moritz.jpg" alt="Moritz Hofmann" class="profile-photo" />
-      <div class="header-text">
-        <h1>Moritz Hofmann</h1>
-        <p class="tagline">E-Commerce Manager &mdash; Münster</p>
-        <p class="header-phone"><a href="tel:+491755508362">0175 5508362</a> <span class="phone-hint">Anruf oder SMS</span></p>
-      </div>
-    </header>
-
-    <section class="offer">
-      <h2>Was ich anbiete</h2>
-      <p>Ich baue und betreibe Ihren Onlineshop auf meine Kosten. Sie behalten Ware, Versand und den Kontakt zu Ihren Kunden und stellen das Werbebudget, das ich für Sie steuere. Ich kümmere mich um Shop, Google Shopping, Zahlungsabwicklung und Technik und bekomme dafür einen Anteil am Onlineumsatz, den wir vorher festlegen. Ohne Umsatz zahlen Sie mir nichts.</p>
-      <p>Das passt für Händler oder Hersteller mit Stammkunden und ohne Shop, und für Creator, die heute per Direktnachricht verkaufen.</p>
-    </section>
-
-    <section class="steps">
-      <h2>So läuft es</h2>
-      <ol>
-        <li><span class="step-title">Gespräch.</span> 20 Minuten am Telefon oder bei Ihnen vor Ort. Wir klären Sortiment, Versand und was Sie sich vom Onlineverkauf erwarten.</li>
-        <li><span class="step-title">Test mit Ihren Kunden.</span> Ein kleines Angebot an Ihre bestehenden Kunden, per Mail, Aushang oder Social Media. Wir zählen, wer online bestellt.</li>
-        <li><span class="step-title">Der Shop.</span> Erst wenn der Test zeigt, dass gekauft wird, baue ich den vollen Shop und schalte Google Shopping.</li>
-      </ol>
-    </section>
-
-    <section class="about">
-      <h2>Über mich</h2>
-      <p>Ich betreibe seit 2008 Onlineshops, zehn Jahre lang meinen eigenen. Heute bin ich E-Commerce Manager bei der Farmula GmbH und betreue dort den Onlineshop. Ich kenne die ganze Kette von Produktdaten und Google Shopping bis Zahlung, Versandlabel und Buchhaltung, und das meiste davon erledige ich mit Software, die ich selbst schreibe.</p>
-    </section>
-
-    <section class="projects">
-      <h2>Bisher</h2>
-      <ul>
-        <li>
-          <span class="project-name">gold4sms.de</span>
-          <span class="project-desc">Mein eigener Shop für Gamecards und Gutscheincodes, 2008 bis 2018. Über 80.000 Kunden, 1,2 Mio. Euro Jahresumsatz, 2018 verkauft.</span>
-        </li>
-      </ul>
-      <figure class="shot">
-        <img src="assets/gold4sms-2016.jpg" alt="Startseite von gold4sms.de im Mai 2016" loading="lazy" width="1280" height="800" />
-        <figcaption>gold4sms.de, Mai 2016</figcaption>
-      </figure>
-      <ul>
-        <li>
-          <a class="project-link" href="https://www.fastpal.com" target="_blank" rel="noopener">fastpal.com</a>
-          <span class="project-desc">Support für Teams, die mit Claude Code arbeiten, in einer gemeinsamen Session.</span>
-        </li>
-      </ul>
-      <p class="project-note">Frühere Experimente: <a href="https://www.wallet2play.de" target="_blank" rel="noopener">wallet2play.de</a>, <a href="https://www.startupdiary.ai" target="_blank" rel="noopener">startupdiary.ai</a>.</p>
-    </section>
-
-    <section class="contact">
-      <h2>Kontakt</h2>
-      <ul>
-        <li><a href="tel:+491755508362">0175 5508362</a> <span class="phone-hint">Anruf oder SMS</span></li>
-        <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;">&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;</a></li>
-        <li><a href="https://www.linkedin.com/in/moritzhofmann/" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </section>
-
-  </main>
-
-  <section class="imprint">
-    <h2>Impressum</h2>
-    <p>Angaben gemäß § 5 DDG:</p>
-    <p>Hofmann GmbH<br />Regerstr. 1<br />48301 Nottuln</p>
-    <p>Geschäftsführer: Moritz Hofmann<br />Registergericht: Amtsgericht Coesfeld, HRB 18001<br />USt-IdNr.: DE303275460</p>
-    <p>Telefon: 0175 5508362<br />E-Mail: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;">&#109;&#101;&#64;&#104;&#111;&#102;&#109;&#97;&#110;&#110;&#109;&#111;&#114;&#105;&#116;&#122;&#46;&#99;&#111;&#109;</a></p>
-    <p class="copyright">&copy; 2026 Hofmann GmbH</p>
-  </section>
+</div>
+</article>
+<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 4 / 4">
+<figure class="pf-bild"><img src="assets/hochzeitsseite.jpg" alt="Der Umschlag der Beispielseite lena-und-jonas.de mit Wachssiegel, Calla und Perlen" width="1280" height="640" loading="lazy"><figcaption>Die Beispielseite lena-und-jonas.de, mit erfundenem Paar</figcaption></figure>
+<div>
+<h3>Hochzeitswebseiten</h3>
+<p class="pf-art">Einladungsseiten für Paare, von Hand gebaut, mit eigener .de-Adresse.</p>
+<ul><li>Digitaler Umschlag, Zu- und Absage online, Gästeliste mit Export</li><li>Nach der Feier laden die Gäste ihre Fotos hoch</li><li>Zwei Gestaltungen: mit Fotos oder mit gemalten Aquarellen</li><li>Die ersten Seiten laufen für echte Paare</li></ul>
+<p class="pf-links"><a href="https://lena-und-jonas.de" target="_blank" rel="noopener">Beispiel ansehen</a><a href="#hochzeit">Angebot weiter unten</a></p>
+</div>
+</article>
+</div>
+<div class="pf-punkte"><button type="button" aria-label="Projekt 1"></button><button type="button" aria-label="Projekt 2"></button><button type="button" aria-label="Projekt 3"></button><button type="button" aria-label="Projekt 4"></button></div>
+</div>
+</section>
+</div>
+<div class="hz-root" id="hochzeit" lang="de" style="--hz-ground:#f6eee2;--hz-paper:#fbf4e8;--hz-band:#efe0cc;--hz-line:#d9c4a5;--hz-ink:#3a2f26;--hz-body:#5a4a3c;--hz-muted:#7a6248;--hz-gold:#9a7745;--hz-on-ink:#fbf4e8;min-height:0">
+<main>
+<section class="hz-wrap hz-hero">
+<div class="hz-hero-text">
+<p class="hz-oben">Handgebaute Hochzeitsseiten</p>
+<h1>Eure Hochzeitseinladung als eigene Webseite.</h1>
+<p class="hz-lead">Ich baue eure Seite von Hand, mit euren Fotos und eurer eigenen Adresse wie vorname-und-vorname.de. Eure Gäste öffnen einen Umschlag, sagen online zu und laden nach der Feier ihre Fotos hoch.</p>
+<div class="hz-cta">
+<a class="hz-btn" href="#anfrage">Unverbindlich anfragen</a>
+<a class="hz-link" href="https://lena-und-jonas.de" target="_blank" rel="noreferrer">Beispiel mit Fotos</a>
+<a class="hz-link" href="https://lena-und-jonas.de/aquarell" target="_blank" rel="noreferrer">Beispiel mit Aquarellen</a>
+</div>
+<p class="hz-preis-kurz">60 EUR für die ersten 5 Paare</p>
+</div>
+<div class="hz-hero-bild">
+<img alt="Die Startseite der Beispielseite: Foto des Paares, Namen und Datum" width="1170" height="1992" src="assets/hochzeit/start.jpg">
+</div>
+</section>
+<section class="hz-band">
+<div class="hz-wrap">
+<h2>So sieht das bei euren Gästen aus</h2>
+<p class="hz-unter">Bilder der Beispielseite <a href="https://lena-und-jonas.de" target="_blank" rel="noreferrer">lena-und-jonas.de</a>, mit erfundenem Paar. Eine zweite Gestaltung mit gemalten Aquarellen: <a href="https://lena-und-jonas.de/aquarell" target="_blank" rel="noreferrer">lena-und-jonas.de/aquarell</a>.</p>
+<div class="hz-handys">
+<figure>
+<img alt="Ein Briefumschlag mit Wachssiegel und dem Wort Öffnen, auf einem Handy" loading="lazy" width="1170" height="1992" src="assets/hochzeit/umschlag.jpg">
+<figcaption>Der Umschlag, den eure Gäste öffnen</figcaption>
+</figure>
+<figure>
+<img alt="Die Startseite der Beispielseite: Foto des Paares, Namen und Datum" loading="lazy" width="1170" height="1992" src="assets/hochzeit/start.jpg">
+<figcaption>Eure Startseite mit Foto und Countdown</figcaption>
+</figure>
+<figure>
+<img alt="Das Antwortformular mit Name, Ja, Nein, Vielleicht und einem Feld für Wünsche" loading="lazy" width="1170" height="1992" src="assets/hochzeit/antwort.jpg">
+<figcaption>Zu- oder Absage direkt auf der Seite</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="hz-wrap hz-abschnitt">
+<h2>Das ist drin</h2>
+<ul class="hz-liste">
+<li>Eigene .de-Adresse wie vorname-und-vorname.de, das erste Jahr zahle ich</li>
+<li>Digitaler Umschlag zum Öffnen, auf Wunsch mit Musik</li>
+<li>Countdown bis zu eurem Tag</li>
+<li>Fotogalerie mit euren Bildern</li>
+<li>Zu- und Absage online, mit Feld für vegetarisch, vegan oder Allergien</li>
+<li>Eine Mail an euch bei jeder Antwort</li>
+<li>Gästeliste mit Passwort, Export nach Excel</li>
+<li>Gäste ändern ihre Antwort später selbst</li>
+<li>Nach der Feier laden eure Gäste ihre Fotos auf die Seite</li>
+<li>Auf Wunsch zweisprachig</li>
+<li>QR-Code für eure gedruckten Karten</li>
+<li>Läuft auf Handy und PC</li>
+</ul>
+</section>
+<section class="hz-wrap hz-abschnitt">
+<h2>So läuft es ab</h2>
+<ol class="hz-schritte">
+<li>
+<span class="hz-nr">1</span>
+<h3>Anfrage</h3>
+<p>Ihr schreibt mir über das Formular, wann und wo ihr heiratet. Ich melde mich per WhatsApp und beantworte eure Fragen.</p>
+</li>
+<li>
+<span class="hz-nr">2</span>
+<h3>Erste Version</h3>
+<p>Ihr schickt mir per WhatsApp Namen, Datum, Location, Texte und Fotos. Die erste Version habt ihr meist am nächsten Tag, spätestens nach 3 Tagen.</p>
+</li>
+<li>
+<span class="hz-nr">3</span>
+<h3>Anpassen, bis sie passt</h3>
+<p>Wir ändern zusammen, bis euch die Seite gefällt. Danach verschickt ihr den Link oder druckt den QR-Code auf eure Karten.</p>
+</li>
+</ol>
+</section>
+<section class="hz-wrap hz-abschnitt">
+<div class="hz-preis">
+<p class="hz-oben">Einführungspreis</p>
+<p class="hz-betrag">60 EUR</p>
+<p>Für die ersten 5 Paare, danach 99 EUR. Mit .de-Adresse für das erste Jahr. Die erste echte Seite läuft schon für ein Paar, das 2027 heiratet.</p>
+<a class="hz-btn" href="#anfrage">Unverbindlich anfragen</a>
+</div>
+</section>
+<section class="hz-wrap hz-abschnitt">
+<h2>Häufige Fragen</h2>
+<div class="hz-faq">
+<details open="">
+<summary>Was kostet die Seite?</summary>
+<p>60 EUR als Einführungspreis für die ersten 5 Paare, danach 99 EUR. Die .de-Adresse für das erste Jahr ist dabei.</p>
+</details>
+<details>
+<summary>Müssen wir etwas von Technik verstehen?</summary>
+<p>Nein. Ihr schickt mir Texte und Fotos, den Rest mache ich. Änderungen schreibt ihr mir einfach per WhatsApp.</p>
+</details>
+<details>
+<summary>Wie lange bleibt die Seite online?</summary>
+<p>Bis 3 Monate nach der Hochzeit. So haben eure Gäste nach der Feier noch Zeit, ihre Fotos hochzuladen.</p>
+</details>
+<details>
+<summary>Brauchen unsere Gäste eine App oder ein Konto?</summary>
+<p>Nein. Sie öffnen den Link oder scannen den QR-Code und antworten direkt auf der Seite.</p>
+</details>
+<details>
+<summary>Wer sieht die Antworten unserer Gäste?</summary>
+<p>Die Gästeliste ist mit einem Passwort geschützt. Eure Gäste sehen nur ihre eigene Antwort.</p>
+</details>
+</div>
+</section>
+<section class="hz-wrap hz-abschnitt hz-ich" id="anfrage">
+<h2>Ihr schreibt direkt mit mir.</h2>
+<p>Ich bin Moritz Hofmann und baue jede Seite selbst. Erzählt mir kurz von eurem Tag, ich melde mich per WhatsApp und sage euch, wie eure Seite aussehen kann.</p>
+<form class="hz-form" data-anfrage="hochzeit">
+<label>
+<span>Eure Namen</span>
+<input required="" autocomplete="name" placeholder="Lena &amp; Jonas" maxlength="100" name="name">
+</label>
+<label>
+<span>Telefonnummer für WhatsApp</span>
+<input type="tel" required="" autocomplete="tel" placeholder="0171 1234567" maxlength="40" name="telefon">
+</label>
+<label>
+<span>E-Mail (freiwillig)</span>
+<input type="email" autocomplete="email" maxlength="200" name="email">
+</label>
+<label>
+<span>Hochzeitsdatum (freiwillig)</span>
+<input placeholder="z. B. 12.06.2027" maxlength="200" name="zusatz">
+</label>
+<label class="hz-form-breit">
+<span>Nachricht (freiwillig)</span>
+<textarea name="nachricht" rows="4" maxlength="3000" placeholder="Location, Wünsche, Fragen">
+</textarea>
+</label>
+<label class="hz-form-falle" aria-hidden="true">Website<input tabindex="-1" autocomplete="off" name="website">
+</label>
+<div class="hz-form-breit hz-form-ende">
+<button class="hz-btn" type="submit">Anfrage senden</button>
+<p class="hz-form-hinweis">Ich nutze eure Angaben nur, um auf eure Anfrage zu antworten. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+</div>
+</form>
+<p class="hz-mail">Lieber per Mail? <a data-mail="">E-Mail</a>
+</p>
+</section>
+</main>
+</div>
+<footer class="pf-footer">
+<div class="pf-wrap">
+<p>Hofmann GmbH, Nottuln</p>
+<nav>
+<a href="impressum.html">Impressum</a>
+<a href="datenschutz.html">Datenschutz</a>
+<a href="https://fastpal.com/download">App herunterladen</a>
+</nav>
+</div>
+</footer>
 </body>
 </html>
