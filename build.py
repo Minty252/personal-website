@@ -232,6 +232,14 @@ DATENSCHUTZ = {
 e = html.escape
 
 
+def asset(up, name):
+    """Asset URL with a content hash, so a changed file gets a new URL (Cloudflare tells
+    browsers to keep CSS and JS for 4 hours)."""
+    import hashlib
+    digest = hashlib.sha256((ROOT / "assets" / name).read_bytes()).hexdigest()[:10]
+    return f"{up}assets/{name}?v={digest}"
+
+
 def kopf(lang, titel, beschreibung, pfad, tiefe):
     up = "../" * tiefe
     t = TEXTE[lang]
@@ -252,11 +260,11 @@ def kopf(lang, titel, beschreibung, pfad, tiefe):
 <link rel="alternate" hreflang="de" href="{de_url}">
 <link rel="alternate" hreflang="en" href="{en_url}">
 <link rel="icon" href="data:,">
-<link rel="stylesheet" href="{up}assets/fonts.css">
-<link rel="stylesheet" href="{up}assets/tabs.css">
-<link rel="stylesheet" href="{up}assets/hochzeit.css">
-<link rel="stylesheet" href="{up}assets/site.css">
-<script defer src="{up}assets/site.js"></script>
+<link rel="stylesheet" href="{asset(up, 'fonts.css')}">
+<link rel="stylesheet" href="{asset(up, 'tabs.css')}">
+<link rel="stylesheet" href="{asset(up, 'hochzeit.css')}">
+<link rel="stylesheet" href="{asset(up, 'site.css')}">
+<script defer src="{asset(up, 'site.js')}"></script>
 </head>
 <body>
 """
