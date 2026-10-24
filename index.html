@@ -38,54 +38,82 @@
 <p class="pf-kontakt"><a data-mail data-mail-label>E-Mail schreiben</a><a href="https://www.linkedin.com/in/moritzhofmann/" target="_blank" rel="noopener">LinkedIn</a></p>
 </div>
 </header>
-<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel">
-<div data-karussell aria-roledescription="carousel" aria-label="Projekte">
+<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel" data-reiter>
 <div class="pf-kopf">
 <h2 id="projekte-titel">Projekte</h2>
-<div class="pf-pfeile">
-<button type="button" class="pf-zurueck" aria-label="Vorheriges Projekt">←</button>
-<button type="button" class="pf-weiter" aria-label="Nächstes Projekt">→</button>
+<div class="pf-reiter" role="tablist" aria-labelledby="projekte-titel"><button type="button" role="tab" id="reiter-0" aria-controls="projekt-0" aria-selected="true">farmula.de</button><button type="button" role="tab" id="reiter-1" aria-controls="projekt-1" aria-selected="false" tabindex="-1">topro.nl</button><button type="button" role="tab" id="reiter-2" aria-controls="projekt-2" aria-selected="false" tabindex="-1">gold4sms.de</button><button type="button" role="tab" id="reiter-3" aria-controls="projekt-3" aria-selected="false" tabindex="-1">Hochzeitsseiten</button></div>
 </div>
+<div class="pf-projekt" role="tabpanel" id="projekt-0" aria-labelledby="reiter-0">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.farmula.de</p>
+<img src="assets/farmula.jpg" alt="Startseite von farmula.de mit der Herbstaktion für Kälberdecken" width="1280" height="640">
 </div>
-<div class="pf-spur" tabindex="0">
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 1 / 4">
-<figure class="pf-bild"><img src="assets/farmula.jpg" alt="Startseite von farmula.de mit der Herbstaktion für Kälberdecken" width="1280" height="640"></figure>
-<div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>farmula.de</h3>
 <p class="pf-art">Tiergesundheit für Landwirte, WooCommerce. Ich baue und betreue den Shop als E-Commerce-Manager der Farmula GmbH.</p>
-<ul><li>Neues Theme nach einem Figma-Entwurf</li><li>Kasse in Schritten und ein Warenkorb, der von der Seite einfährt</li><li>Staffelpreise, Mehrfachpackungen und Aktions-Sets als eigenes Plugin</li><li>Google-Shopping-Feed, Google Ads und ein Test mit Anzeigen in ChatGPT</li><li>Tracking mit GA4, Google Tag Manager und Mixpanel</li><li>Seiten-Cache für kurze Ladezeiten und ein Korrekturlauf über alle Seiten</li></ul>
-<p class="pf-links"><a href="https://www.farmula.de" target="_blank" rel="noopener">farmula.de ansehen</a></p>
+<p class="pf-links"><a href="https://www.farmula.de" target="_blank" rel="noopener">Shop ansehen</a></p>
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 2 / 4">
-<figure class="pf-bild"><img src="assets/topro.jpg" alt="Startseite von topro.nl mit der Herbstaktion" width="1280" height="640" loading="lazy"></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">Was ich gemacht habe</p>
+<ul><li>Neues Theme nach einem Figma-Entwurf</li><li>Kasse in Schritten und ein Warenkorb, der von der Seite einfährt</li><li>Staffelpreise, Mehrfachpackungen und Aktions-Sets als eigenes Plugin</li><li>Google-Shopping-Feed, Google Ads und ein Test mit Anzeigen in ChatGPT</li><li>Tracking mit GA4, Google Tag Manager und Mixpanel</li><li>Seiten-Cache für kurze Ladezeiten und ein Korrekturlauf über alle Seiten</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-1" aria-labelledby="reiter-1">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.topro.nl</p>
+<img src="assets/topro.jpg" alt="Startseite von topro.nl mit der Herbstaktion" width="1280" height="640" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>topro.nl</h3>
 <p class="pf-art">Der niederländische Shop der Farmula B.V., WooCommerce.</p>
-<ul><li>Neu gestaltet, live seit Oktober 2026</li><li>Umzug auf einen eigenen Server</li><li>Neue Produkte und Unterkategorien, ohne dass sich Produkt-Adressen ändern (die QR-Codes in den Broschüren funktionieren weiter)</li><li>Preise ohne Mehrwertsteuer für Geschäftskunden</li><li>GA4 mit Kauf-Tracking vom Server und Spamschutz im Kontaktformular</li></ul>
-<p class="pf-links"><a href="https://www.topro.nl" target="_blank" rel="noopener">topro.nl ansehen</a></p>
+<p class="pf-links"><a href="https://www.topro.nl" target="_blank" rel="noopener">Shop ansehen</a></p>
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 3 / 4">
-<figure class="pf-bild"><img src="assets/gold4sms-2016.jpg" alt="Startseite von gold4sms.de im Mai 2016" width="1280" height="800" loading="lazy"><figcaption>gold4sms.de im Mai 2016, Design von 2011</figcaption></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">Was ich gemacht habe</p>
+<ul><li>Neu gestaltet, live seit Oktober 2026</li><li>Umzug auf einen eigenen Server</li><li>Neue Produkte und Unterkategorien, ohne dass sich Produkt-Adressen ändern (die QR-Codes in den Broschüren funktionieren weiter)</li><li>Preise ohne Mehrwertsteuer für Geschäftskunden</li><li>GA4 mit Kauf-Tracking vom Server und Spamschutz im Kontaktformular</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-2" aria-labelledby="reiter-2">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.gold4sms.de <span class="pf-adresse-zusatz">· Mai 2016, Design von 2011</span></p>
+<img src="assets/gold4sms-2016.jpg" alt="Startseite von gold4sms.de im Mai 2016" width="1280" height="800" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>gold4sms.de</h3>
 <p class="pf-art">Mein eigener Shop für Gamecards und Gutscheincodes, 2008 bis 2018.</p>
-<ul><li>Aufgebaut und zehn Jahre selbst betrieben</li><li>Über 80.000 Kunden</li><li>1,2 Mio. Euro Jahresumsatz</li><li>2018 verkauft</li></ul>
 
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Projekt 4 / 4">
-<figure class="pf-bild"><img src="assets/hochzeitsseite.jpg" alt="Der Umschlag der Beispielseite lena-und-jonas.de mit Wachssiegel, Calla und Perlen" width="1280" height="640" loading="lazy"><figcaption>Die Beispielseite lena-und-jonas.de, mit erfundenem Paar</figcaption></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">Was ich gemacht habe</p>
+<ul><li>Aufgebaut und zehn Jahre selbst betrieben</li><li>Über 80.000 Kunden</li><li>1,2 Mio. Euro Jahresumsatz</li><li>2018 verkauft</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-3" aria-labelledby="reiter-3">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">lena-und-jonas.de <span class="pf-adresse-zusatz">· Beispielseite mit erfundenem Paar</span></p>
+<img src="assets/hochzeitsseite.jpg" alt="Der Umschlag der Beispielseite lena-und-jonas.de mit Wachssiegel, Calla und Perlen" width="1280" height="640" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>Hochzeitswebseiten</h3>
 <p class="pf-art">Einladungsseiten für Paare, von Hand gebaut, mit eigener .de-Adresse.</p>
-<ul><li>Digitaler Umschlag, Zu- und Absage online, Gästeliste mit Export</li><li>Nach der Feier laden die Gäste ihre Fotos hoch</li><li>Zwei Gestaltungen: mit Fotos oder mit gemalten Aquarellen</li><li>Die ersten Seiten laufen für echte Paare</li></ul>
 <p class="pf-links"><a href="https://lena-und-jonas.de" target="_blank" rel="noopener">Beispiel ansehen</a><a href="#hochzeit">Angebot weiter unten</a></p>
 </div>
-</article>
+<div class="pf-gemacht">
+<p class="pf-label">Was ich gemacht habe</p>
+<ul><li>Digitaler Umschlag, Zu- und Absage online, Gästeliste mit Export</li><li>Nach der Feier laden die Gäste ihre Fotos hoch</li><li>Zwei Gestaltungen: mit Fotos oder mit gemalten Aquarellen</li><li>Die ersten Seiten laufen für echte Paare</li></ul>
 </div>
-<div class="pf-punkte"><button type="button" aria-label="Projekt 1"></button><button type="button" aria-label="Projekt 2"></button><button type="button" aria-label="Projekt 3"></button><button type="button" aria-label="Projekt 4"></button></div>
+</div>
 </div>
 </section>
 </div>

@@ -38,54 +38,82 @@
 <p class="pf-kontakt"><a data-mail data-mail-label>Write an e-mail</a><a href="https://www.linkedin.com/in/moritzhofmann/" target="_blank" rel="noopener">LinkedIn</a></p>
 </div>
 </header>
-<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel">
-<div data-karussell aria-roledescription="carousel" aria-label="Projects">
+<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel" data-reiter>
 <div class="pf-kopf">
 <h2 id="projekte-titel">Projects</h2>
-<div class="pf-pfeile">
-<button type="button" class="pf-zurueck" aria-label="Previous project">←</button>
-<button type="button" class="pf-weiter" aria-label="Next project">→</button>
+<div class="pf-reiter" role="tablist" aria-labelledby="projekte-titel"><button type="button" role="tab" id="reiter-0" aria-controls="projekt-0" aria-selected="true">farmula.de</button><button type="button" role="tab" id="reiter-1" aria-controls="projekt-1" aria-selected="false" tabindex="-1">topro.nl</button><button type="button" role="tab" id="reiter-2" aria-controls="projekt-2" aria-selected="false" tabindex="-1">gold4sms.de</button><button type="button" role="tab" id="reiter-3" aria-controls="projekt-3" aria-selected="false" tabindex="-1">Wedding sites</button></div>
 </div>
+<div class="pf-projekt" role="tabpanel" id="projekt-0" aria-labelledby="reiter-0">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.farmula.de</p>
+<img src="../assets/farmula.jpg" alt="Home page of farmula.de with the autumn offer for calf blankets" width="1280" height="640">
 </div>
-<div class="pf-spur" tabindex="0">
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Project 1 / 4">
-<figure class="pf-bild"><img src="../assets/farmula.jpg" alt="Home page of farmula.de with the autumn offer for calf blankets" width="1280" height="640"></figure>
-<div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>farmula.de</h3>
 <p class="pf-art">Animal health for farmers, WooCommerce. I build and run the shop as e-commerce manager at Farmula GmbH.</p>
-<ul><li>New theme built from a Figma design</li><li>Checkout in steps and a cart that slides in from the side</li><li>Volume pricing, multipacks and bundles as a plugin of my own</li><li>Google Shopping feed, Google Ads and a test with ads in ChatGPT</li><li>Tracking with GA4, Google Tag Manager and Mixpanel</li><li>Page cache for fast loading and a proofreading pass over every page</li></ul>
-<p class="pf-links"><a href="https://www.farmula.de" target="_blank" rel="noopener">Visit farmula.de</a></p>
+<p class="pf-links"><a href="https://www.farmula.de" target="_blank" rel="noopener">Visit the shop</a></p>
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Project 2 / 4">
-<figure class="pf-bild"><img src="../assets/topro.jpg" alt="Home page of topro.nl with the autumn offer" width="1280" height="640" loading="lazy"></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">What I did</p>
+<ul><li>New theme built from a Figma design</li><li>Checkout in steps and a cart that slides in from the side</li><li>Volume pricing, multipacks and bundles as a plugin of my own</li><li>Google Shopping feed, Google Ads and a test with ads in ChatGPT</li><li>Tracking with GA4, Google Tag Manager and Mixpanel</li><li>Page cache for fast loading and a proofreading pass over every page</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-1" aria-labelledby="reiter-1">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.topro.nl</p>
+<img src="../assets/topro.jpg" alt="Home page of topro.nl with the autumn offer" width="1280" height="640" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>topro.nl</h3>
 <p class="pf-art">The Dutch shop of Farmula B.V., WooCommerce.</p>
-<ul><li>Redesigned, live since October 2026</li><li>Moved to a server of its own</li><li>New products and subcategories without changing product addresses (the QR codes in the brochures keep working)</li><li>Prices without VAT for business customers</li><li>GA4 with server-side purchase tracking and spam protection on the contact form</li></ul>
-<p class="pf-links"><a href="https://www.topro.nl" target="_blank" rel="noopener">Visit topro.nl</a></p>
+<p class="pf-links"><a href="https://www.topro.nl" target="_blank" rel="noopener">Visit the shop</a></p>
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Project 3 / 4">
-<figure class="pf-bild"><img src="../assets/gold4sms-2016.jpg" alt="Home page of gold4sms.de in May 2016" width="1280" height="800" loading="lazy"><figcaption>gold4sms.de in May 2016, design from 2011</figcaption></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">What I did</p>
+<ul><li>Redesigned, live since October 2026</li><li>Moved to a server of its own</li><li>New products and subcategories without changing product addresses (the QR codes in the brochures keep working)</li><li>Prices without VAT for business customers</li><li>GA4 with server-side purchase tracking and spam protection on the contact form</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-2" aria-labelledby="reiter-2">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">www.gold4sms.de <span class="pf-adresse-zusatz">· May 2016, design from 2011</span></p>
+<img src="../assets/gold4sms-2016.jpg" alt="Home page of gold4sms.de in May 2016" width="1280" height="800" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>gold4sms.de</h3>
 <p class="pf-art">My own shop for game cards and voucher codes, 2008 to 2018.</p>
-<ul><li>Built it and ran it myself for ten years</li><li>More than 80,000 customers</li><li>€1.2 million annual revenue</li><li>Sold in 2018</li></ul>
 
 </div>
-</article>
-<article class="pf-projekt" aria-roledescription="slide" aria-label="Project 4 / 4">
-<figure class="pf-bild"><img src="../assets/hochzeitsseite.jpg" alt="The envelope of the sample site lena-und-jonas.de with wax seal, calla lilies and pearls" width="1280" height="640" loading="lazy"><figcaption>The sample site lena-und-jonas.de, with a made-up couple</figcaption></figure>
-<div>
+<div class="pf-gemacht">
+<p class="pf-label">What I did</p>
+<ul><li>Built it and ran it myself for ten years</li><li>More than 80,000 customers</li><li>€1.2 million annual revenue</li><li>Sold in 2018</li></ul>
+</div>
+</div>
+</div>
+<div class="pf-projekt" role="tabpanel" id="projekt-3" aria-labelledby="reiter-3">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">lena-und-jonas.de <span class="pf-adresse-zusatz">· Sample site with a made-up couple</span></p>
+<img src="../assets/hochzeitsseite.jpg" alt="The envelope of the sample site lena-und-jonas.de with wax seal, calla lilies and pearls" width="1280" height="640" loading="lazy">
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>Wedding websites</h3>
 <p class="pf-art">Invitation sites for couples, built by hand, with their own domain.</p>
-<ul><li>Digital envelope, RSVP online, guest list with export</li><li>After the party, guests upload their photos</li><li>Two designs: with photos or with painted watercolours</li><li>The first sites are live for real couples</li></ul>
 <p class="pf-links"><a href="https://lena-und-jonas.de" target="_blank" rel="noopener">See the sample</a><a href="#hochzeit">Offer further down</a></p>
 </div>
-</article>
+<div class="pf-gemacht">
+<p class="pf-label">What I did</p>
+<ul><li>Digital envelope, RSVP online, guest list with export</li><li>After the party, guests upload their photos</li><li>Two designs: with photos or with painted watercolours</li><li>The first sites are live for real couples</li></ul>
 </div>
-<div class="pf-punkte"><button type="button" aria-label="Project 1"></button><button type="button" aria-label="Project 2"></button><button type="button" aria-label="Project 3"></button><button type="button" aria-label="Project 4"></button></div>
+</div>
 </div>
 </section>
 </div>

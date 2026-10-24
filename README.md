@@ -1,6 +1,6 @@
 # hofmannmoritz.com
 
-One page: e-commerce portfolio (carousel) and the wedding website offer, German at `/`,
+One page: e-commerce portfolio (tabs per project, screenshot in a browser frame) and the wedding website offer, German at `/`,
 English at `/en/`. Static files on GitHub Pages, behind Cloudflare.
 
 - Edit texts in `build.py`, then `python3 build.py` writes `index.html`, `en/index.html`,

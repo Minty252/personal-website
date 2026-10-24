@@ -1,5 +1,5 @@
 // hofmannmoritz.com: mail links, the request form of the wedding section and the
-// project carousel. No cookies, no tracking.
+// project tabs. No cookies, no tracking.
 (function () {
   var en = document.documentElement.lang === "en";
 
@@ -57,33 +57,31 @@
     });
   });
 
-  // Carousel: native horizontal scrolling with snap points; the buttons and dots
-  // only scroll it. Without the script it still scrolls by swipe or trackpad.
-  document.querySelectorAll("[data-karussell]").forEach(function (box) {
-    var track = box.querySelector(".pf-spur");
-    var slides = Array.prototype.slice.call(track.children);
-    var dots = box.querySelectorAll(".pf-punkte button");
-    var current = function () {
-      return Math.round(track.scrollLeft / track.clientWidth);
+  // Projects: tabs switch the visible project. Without the script every project shows
+  // one below the other (no hidden attributes in the HTML).
+  document.querySelectorAll("[data-reiter]").forEach(function (box) {
+    var tabs = Array.prototype.slice.call(box.querySelectorAll("[role=tab]"));
+    var panels = tabs.map(function (tab) { return document.getElementById(tab.getAttribute("aria-controls")); });
+    box.classList.add("pf-js");
+    var show = function (i, focus) {
+      tabs.forEach(function (tab, j) {
+        var on = i === j;
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        tab.tabIndex = on ? 0 : -1;
+        panels[j].hidden = !on;
+      });
+      if (focus) tabs[i].focus({ preventScroll: true });
+      // Only the tab row scrolls (narrow screens), never the page.
+      var list = tabs[i].parentElement;
+      list.scrollLeft = Math.max(0, tabs[i].offsetLeft - list.offsetLeft - (list.clientWidth - tabs[i].offsetWidth) / 2);
     };
-    var go = function (i) {
-      i = Math.max(0, Math.min(slides.length - 1, i));
-      track.scrollTo({ left: slides[i].offsetLeft - track.offsetLeft, behavior: "smooth" });
-    };
-    box.querySelector(".pf-zurueck").addEventListener("click", function () { go(current() - 1); });
-    box.querySelector(".pf-weiter").addEventListener("click", function () { go(current() + 1); });
-    dots.forEach(function (dot, i) { dot.addEventListener("click", function () { go(i); }); });
-    var mark = function () {
-      var i = current();
-      dots.forEach(function (dot, j) { dot.setAttribute("aria-current", i === j ? "true" : "false"); });
-      box.querySelector(".pf-zurueck").disabled = i === 0;
-      box.querySelector(".pf-weiter").disabled = i === slides.length - 1;
-    };
-    track.addEventListener("scroll", function () { window.requestAnimationFrame(mark); }, { passive: true });
-    box.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight") go(current() + 1);
-      if (e.key === "ArrowLeft") go(current() - 1);
+    tabs.forEach(function (tab, i) {
+      tab.addEventListener("click", function () { show(i, false); });
+      tab.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowRight") show((i + 1) % tabs.length, true);
+        if (e.key === "ArrowLeft") show((i - 1 + tabs.length) % tabs.length, true);
+      });
     });
-    mark();
+    show(0, false);
   });
 })();

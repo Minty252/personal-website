@@ -18,7 +18,7 @@ LINKEDIN = "https://www.linkedin.com/in/moritzhofmann/"
 PROJEKTE = {
     "de": [
         {
-            "titel": "farmula.de",
+            "titel": "farmula.de", "tab": "farmula.de", "domain": "www.farmula.de",
             "art": "Tiergesundheit für Landwirte, WooCommerce. Ich baue und betreue den Shop als E-Commerce-Manager der Farmula GmbH.",
             "bild": "farmula.jpg", "breite": 1280, "hoehe": 640,
             "alt": "Startseite von farmula.de mit der Herbstaktion für Kälberdecken",
@@ -30,10 +30,10 @@ PROJEKTE = {
                 "Tracking mit GA4, Google Tag Manager und Mixpanel",
                 "Seiten-Cache für kurze Ladezeiten und ein Korrekturlauf über alle Seiten",
             ],
-            "links": [("farmula.de ansehen", "https://www.farmula.de")],
+            "links": [("Shop ansehen", "https://www.farmula.de")],
         },
         {
-            "titel": "topro.nl",
+            "titel": "topro.nl", "tab": "topro.nl", "domain": "www.topro.nl",
             "art": "Der niederländische Shop der Farmula B.V., WooCommerce.",
             "bild": "topro.jpg", "breite": 1280, "hoehe": 640,
             "alt": "Startseite von topro.nl mit der Herbstaktion",
@@ -44,14 +44,14 @@ PROJEKTE = {
                 "Preise ohne Mehrwertsteuer für Geschäftskunden",
                 "GA4 mit Kauf-Tracking vom Server und Spamschutz im Kontaktformular",
             ],
-            "links": [("topro.nl ansehen", "https://www.topro.nl")],
+            "links": [("Shop ansehen", "https://www.topro.nl")],
         },
         {
-            "titel": "gold4sms.de",
+            "titel": "gold4sms.de", "tab": "gold4sms.de", "domain": "www.gold4sms.de",
             "art": "Mein eigener Shop für Gamecards und Gutscheincodes, 2008 bis 2018.",
             "bild": "gold4sms-2016.jpg", "breite": 1280, "hoehe": 800,
             "alt": "Startseite von gold4sms.de im Mai 2016",
-            "unterschrift": "gold4sms.de im Mai 2016, Design von 2011",
+            "unterschrift": "Mai 2016, Design von 2011",
             "punkte": [
                 "Aufgebaut und zehn Jahre selbst betrieben",
                 "Über 80.000 Kunden",
@@ -61,11 +61,11 @@ PROJEKTE = {
             "links": [],
         },
         {
-            "titel": "Hochzeitswebseiten",
+            "titel": "Hochzeitswebseiten", "tab": "Hochzeitsseiten", "domain": "lena-und-jonas.de",
             "art": "Einladungsseiten für Paare, von Hand gebaut, mit eigener .de-Adresse.",
             "bild": "hochzeitsseite.jpg", "breite": 1280, "hoehe": 640,
             "alt": "Der Umschlag der Beispielseite lena-und-jonas.de mit Wachssiegel, Calla und Perlen",
-            "unterschrift": "Die Beispielseite lena-und-jonas.de, mit erfundenem Paar",
+            "unterschrift": "Beispielseite mit erfundenem Paar",
             "punkte": [
                 "Digitaler Umschlag, Zu- und Absage online, Gästeliste mit Export",
                 "Nach der Feier laden die Gäste ihre Fotos hoch",
@@ -77,7 +77,7 @@ PROJEKTE = {
     ],
     "en": [
         {
-            "titel": "farmula.de",
+            "titel": "farmula.de", "tab": "farmula.de", "domain": "www.farmula.de",
             "art": "Animal health for farmers, WooCommerce. I build and run the shop as e-commerce manager at Farmula GmbH.",
             "bild": "farmula.jpg", "breite": 1280, "hoehe": 640,
             "alt": "Home page of farmula.de with the autumn offer for calf blankets",
@@ -89,10 +89,10 @@ PROJEKTE = {
                 "Tracking with GA4, Google Tag Manager and Mixpanel",
                 "Page cache for fast loading and a proofreading pass over every page",
             ],
-            "links": [("Visit farmula.de", "https://www.farmula.de")],
+            "links": [("Visit the shop", "https://www.farmula.de")],
         },
         {
-            "titel": "topro.nl",
+            "titel": "topro.nl", "tab": "topro.nl", "domain": "www.topro.nl",
             "art": "The Dutch shop of Farmula B.V., WooCommerce.",
             "bild": "topro.jpg", "breite": 1280, "hoehe": 640,
             "alt": "Home page of topro.nl with the autumn offer",
@@ -103,14 +103,14 @@ PROJEKTE = {
                 "Prices without VAT for business customers",
                 "GA4 with server-side purchase tracking and spam protection on the contact form",
             ],
-            "links": [("Visit topro.nl", "https://www.topro.nl")],
+            "links": [("Visit the shop", "https://www.topro.nl")],
         },
         {
-            "titel": "gold4sms.de",
+            "titel": "gold4sms.de", "tab": "gold4sms.de", "domain": "www.gold4sms.de",
             "art": "My own shop for game cards and voucher codes, 2008 to 2018.",
             "bild": "gold4sms-2016.jpg", "breite": 1280, "hoehe": 800,
             "alt": "Home page of gold4sms.de in May 2016",
-            "unterschrift": "gold4sms.de in May 2016, design from 2011",
+            "unterschrift": "May 2016, design from 2011",
             "punkte": [
                 "Built it and ran it myself for ten years",
                 "More than 80,000 customers",
@@ -120,11 +120,11 @@ PROJEKTE = {
             "links": [],
         },
         {
-            "titel": "Wedding websites",
+            "titel": "Wedding websites", "tab": "Wedding sites", "domain": "lena-und-jonas.de",
             "art": "Invitation sites for couples, built by hand, with their own domain.",
             "bild": "hochzeitsseite.jpg", "breite": 1280, "hoehe": 640,
             "alt": "The envelope of the sample site lena-und-jonas.de with wax seal, calla lilies and pearls",
-            "unterschrift": "The sample site lena-und-jonas.de, with a made-up couple",
+            "unterschrift": "Sample site with a made-up couple",
             "punkte": [
                 "Digital envelope, RSVP online, guest list with export",
                 "After the party, guests upload their photos",
@@ -149,10 +149,7 @@ TEXTE = {
         "lead": "Ich baue und betreue Onlineshops, seit 2008. Hier steht, woran ich gearbeitet habe und was ich dort gemacht habe. Dazu baue ich Hochzeitswebseiten für Paare.",
         "mail": "E-Mail schreiben",
         "projekte": "Projekte",
-        "zurueck": "Vorheriges Projekt",
-        "weiter": "Nächstes Projekt",
-        "projekt_n": "Projekt {n}",
-        "karussell": "Projekte",
+        "gemacht": "Was ich gemacht habe",
         "fusszeile": "Hofmann GmbH, Nottuln",
         "impressum": "Impressum",
         "datenschutz": "Datenschutz",
@@ -172,10 +169,7 @@ TEXTE = {
         "lead": "I build and run online shops, since 2008. Here is what I have worked on and what I did there. I also build wedding websites for couples.",
         "mail": "Write an e-mail",
         "projekte": "Projects",
-        "zurueck": "Previous project",
-        "weiter": "Next project",
-        "projekt_n": "Project {n}",
-        "karussell": "Projects",
+        "gemacht": "What I did",
         "fusszeile": "Hofmann GmbH, Nottuln, Germany",
         "impressum": "Imprint",
         "datenschutz": "Privacy",
@@ -308,18 +302,28 @@ def fuss(lang):
 """
 
 
-def projekt(p, i, up, t, n):
+def projekt(p, i, up, t):
+    """One project: a tab panel with the screenshot in a browser frame, the info below."""
     links = "".join(f'<a href="{e(href)}"{"" if href.startswith("#") else " target=\"_blank\" rel=\"noopener\""}>{e(text)}</a>' for text, href in p["links"])
-    unterschrift = f"<figcaption>{e(p['unterschrift'])}</figcaption>" if p.get("unterschrift") else ""
-    return f"""<article class="pf-projekt" aria-roledescription="slide" aria-label="{e(t['projekt_n'].format(n=f'{i + 1} / {n}'))}">
-<figure class="pf-bild"><img src="{up}assets/{p['bild']}" alt="{e(p['alt'])}" width="{p['breite']}" height="{p['hoehe']}"{' loading="lazy"' if i else ''}>{unterschrift}</figure>
-<div>
+    adresse = e(p["domain"]) + (f' <span class="pf-adresse-zusatz">· {e(p["unterschrift"])}</span>' if p.get("unterschrift") else "")
+    return f"""<div class="pf-projekt" role="tabpanel" id="projekt-{i}" aria-labelledby="reiter-{i}">
+<div class="pf-browser">
+<div class="pf-leiste" aria-hidden="true"><span></span><span></span><span></span></div>
+<p class="pf-adresse">{adresse}</p>
+<img src="{up}assets/{p['bild']}" alt="{e(p['alt'])}" width="{p['breite']}" height="{p['hoehe']}"{' loading="lazy"' if i else ''}>
+</div>
+<div class="pf-info">
+<div class="pf-was">
 <h3>{e(p['titel'])}</h3>
 <p class="pf-art">{e(p['art'])}</p>
-<ul>{''.join(f'<li>{e(x)}</li>' for x in p['punkte'])}</ul>
 {f'<p class="pf-links">{links}</p>' if links else ''}
 </div>
-</article>"""
+<div class="pf-gemacht">
+<p class="pf-label">{t['gemacht']}</p>
+<ul>{''.join(f'<li>{e(x)}</li>' for x in p['punkte'])}</ul>
+</div>
+</div>
+</div>"""
 
 
 def startseite(lang):
@@ -327,8 +331,11 @@ def startseite(lang):
     tiefe = 1 if lang == "en" else 0
     up = "../" * tiefe
     projekte = PROJEKTE[lang]
-    slides = "\n".join(projekt(p, i, up, t, len(projekte)) for i, p in enumerate(projekte))
-    punkte = "".join(f'<button type="button" aria-label="{e(t["projekt_n"].format(n=i + 1))}"></button>' for i in range(len(projekte)))
+    panels = "\n".join(projekt(p, i, up, t) for i, p in enumerate(projekte))
+    reiter = "".join(
+        f'<button type="button" role="tab" id="reiter-{i}" aria-controls="projekt-{i}" aria-selected="{"true" if i == 0 else "false"}"{"" if i == 0 else " tabindex=\"-1\""}>{e(p["tab"])}</button>'
+        for i, p in enumerate(projekte)
+    )
     hochzeit = (ROOT / "src" / f"hochzeit-{lang}.html").read_text()
     return (
         kopf(lang, t["titel"], t["beschreibung"], "index", tiefe)
@@ -342,20 +349,12 @@ def startseite(lang):
 <p class="pf-kontakt"><a data-mail data-mail-label>{t['mail']}</a><a href="{LINKEDIN}" target="_blank" rel="noopener">LinkedIn</a></p>
 </div>
 </header>
-<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel">
-<div data-karussell aria-roledescription="carousel" aria-label="{t['karussell']}">
+<section class="pf-wrap pf-projekte" id="projekte" aria-labelledby="projekte-titel" data-reiter>
 <div class="pf-kopf">
 <h2 id="projekte-titel">{t['projekte']}</h2>
-<div class="pf-pfeile">
-<button type="button" class="pf-zurueck" aria-label="{t['zurueck']}">←</button>
-<button type="button" class="pf-weiter" aria-label="{t['weiter']}">→</button>
+<div class="pf-reiter" role="tablist" aria-labelledby="projekte-titel">{reiter}</div>
 </div>
-</div>
-<div class="pf-spur" tabindex="0">
-{slides}
-</div>
-<div class="pf-punkte">{punkte}</div>
-</div>
+{panels}
 </section>
 </div>
 <div class="hz-root" id="hochzeit" lang="{lang}" style="--hz-ground:#f6eee2;--hz-paper:#fbf4e8;--hz-band:#efe0cc;--hz-line:#d9c4a5;--hz-ink:#3a2f26;--hz-body:#5a4a3c;--hz-muted:#7a6248;--hz-gold:#9a7745;--hz-on-ink:#fbf4e8;min-height:0">
